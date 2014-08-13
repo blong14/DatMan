@@ -24,8 +24,26 @@ public final class NonLinear {
 	 * @param data The data to find the sample entropy of
 	 * @return The sample entropy of a time series
 	 */
-	public float sampleEntropy(float[] data) {
+	public double sampleEntropy(float[] data) {
 		//TODO: finish this method
-		return 0.0f;
+		return 0.0;
+	}
+	
+	/**
+	 * Perform Detrended Fluctuation Analysis
+	 * 
+	 * @param seq Input data array
+   * @param npts Number of input points
+   * @param nfit Order of detrending (2: linear, 3: quadratic, etc.)
+   * @param rs Array of box sizes (uniformly distributed on log scale)
+   * @param nr Number of entries in rs[] and mse[]
+   * @param sw Mode (0: non-overlapping windows, 1: sliding window)
+	 * @param data The data to perform DFA on
+	 * @return The DFA array
+	 */
+	public double[] dfa(float[] data,long npts,int nfit,long[] rs,int nr,int sw) {
+		//TODO: finish this method
+		double[] dfa = new double[nr];
+		return dfa;
 	}
 }
